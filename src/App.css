@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #efeffe;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cityImg {
+  position: absolute;
+  z-index: -999;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  transition: 1s;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.glassEffect {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
-
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: IBM;
+  src: url("/public/fonts/IBM/IBMPlexSansArabic-Bold.ttf");
+  /* weight: 700; */
+  font-weight: 700;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: IBM;
+  src: url("/public/fonts/IBM/IBMPlexSansArabic-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: IBM;
+  src: url("/public/fonts/IBM/IBMPlexSansArabic-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: IBM;
+  src: url("/public/fonts/IBM/IBMPlexSansArabic-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: IBM;
+  src: url("/public/fonts/IBM/IBMPlexSansArabic-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: IBM;
+  src: url("/public/fonts/IBM/IBMPlexSansArabic-ExtraLight.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: IBM;
+  src: url("/public/fonts/IBM/IBMPlexSansArabic-Thin.ttf");
+  font-weight: 100;
 }
